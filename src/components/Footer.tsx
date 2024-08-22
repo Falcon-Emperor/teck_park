@@ -6,15 +6,16 @@ import {
   Youtube,
   Instagram,
 } from "lucide-react";
+
 import Link from "next/link";
 export const Footer = () => {
   return (
-    <footer className="py-5 bg-black text-white/60 border-t border-white/20">
-      <div className="container">
-        <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
+    <footer className="h-full py-5 bg-black text-white/60 border-t border-white/20">
+      <div className="container mx-auto  py-5 flex items-center justify-between gap-16 sm:flex-row sm:justify-between">
+        
           {/* right */}
           <div className="text-center">
-            ©️ 2024 Your Company, Inc. All rights reserved
+            ©️ 2024 Baitussalam Welfare Trust. All rights reserved
           </div>
           {/* left */}
           <ul className="flex justify-center gap-2.5">
@@ -41,7 +42,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
+      
     </footer>
   );
 };
