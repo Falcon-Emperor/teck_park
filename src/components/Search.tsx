@@ -1,13 +1,23 @@
 'use client'
 import { useState } from "react";
 
+// Define a type for the user details
+interface UserDetails {
+  name: string;
+  email: string;
+  cnic: string;
+  fatherName: string;
+  admitCardLink: string;
+}
+
 function Search() {
+  // Update the state to be of type UserDetails or null
   const [contactNumber, setContactNumber] = useState("");
-  const [userDetails, setUserDetails] = useState(null);
+  const [userDetails, setUserDetails] = useState<UserDetails | null>(null);
 
   const handleSearch = () => {
     // Placeholder for searching logic, which will be connected to the DB later.
-    const dummyData = {
+    const dummyData: UserDetails = {
       name: "John Doe",
       email: "johndoe@example.com",
       cnic: "12345-6789012-3",
@@ -42,7 +52,7 @@ function Search() {
           <p><strong>Name:</strong> {userDetails.name}</p>
           <p><strong>Email:</strong> {userDetails.email}</p>
           <p><strong>CNIC:</strong> {userDetails.cnic}</p>
-          <p><strong>Fathers Name:</strong> {userDetails.fatherName}</p>
+          <p><strong>Father's Name:</strong> {userDetails.fatherName}</p>
           <p><strong>Admit Card:</strong> <a href={userDetails.admitCardLink} className="text-blue-500 underline">Download</a></p>
         </div>
       )}
