@@ -52,7 +52,7 @@ function Search() {
           <p><strong>Name:</strong> {userDetails.name}</p>
           <p><strong>Email:</strong> {userDetails.email}</p>
           <p><strong>CNIC:</strong> {userDetails.cnic}</p>
-          <p><strong>Father's Name:</strong> {userDetails.fatherName}</p>
+          <p><strong>Fathers Name:</strong> {userDetails.fatherName}</p>
           <p><strong>Admit Card:</strong> <a href={userDetails.admitCardLink} className="text-blue-500 underline">Download</a></p>
         </div>
       )}
