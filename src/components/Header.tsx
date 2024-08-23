@@ -39,7 +39,7 @@ function Header() {
                   New Admissions Are Currently Closed 
                 </AlertDialogTitle>
                 <AlertDialogDescription className="text-black">
-                  New admissions into Baitussalam's prestigious PSDC program
+                  New admissions into Baitussalams prestigious PSDC program
                   are closed. Please follow our social media handles to get
                   notified once a new batch is open.
                 </AlertDialogDescription>
